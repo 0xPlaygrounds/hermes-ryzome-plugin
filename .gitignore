@@ -1,1 +1,3 @@
-ryzome_hermes_plugin/_runner.js
+__pycache__/
+ryzome_hermes_plugin/__pycache__/
+!ryzome_hermes_plugin/_runner.js

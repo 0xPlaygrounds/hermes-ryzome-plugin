@@ -2,20 +2,31 @@
 
 [Ryzome](https://ryzome.ai) canvas and document tools for the [Hermes Agent](https://hermes.ai). Lets an AI agent externalize its working context (plans, research, reasoning) as interactive canvases. Users can inspect, edit, and hand the corrected graph back to the agent.
 
+This repository is the standalone Hermes install surface. The broader multi-surface Ryzome integrations live in the monorepo at [`0xPlaygrounds/ryzome-mcp-plugins`](https://github.com/0xPlaygrounds/ryzome-mcp-plugins).
+
 ## Requirements
 
 - Python 3.10+
-- Node.js (the wheel bundles a compiled Node runner; `node` must be on `PATH`)
+- Node.js (`node` must be on `PATH`)
 - A Ryzome API key — [get one here](https://ryzome.ai/workspace#settings/api-keys)
 
 ## Install
+
+Recommended Hermes install path:
+
+```bash
+hermes plugins install 0xPlaygrounds/hermes-ryzome-plugin --enable
+hermes ryzome setup --key <api-key>
+```
+
+Alternative PyPI install:
 
 ```bash
 pip install hermes-ryzome-plugin
 hermes ryzome setup --key <api-key>
 ```
 
-The wheel bundles the Node runner (`ryzome_hermes_plugin/_runner.js`) — no separate npm install is required.
+Both the git install and the PyPI wheel ship a bundled Node runner at `ryzome_hermes_plugin/_runner.js`, so no separate npm install is required.
 
 ## Configure
 

@@ -19,6 +19,11 @@ classifiers = [
 [project.entry-points."hermes_agent.plugins"]
 ryzome = "ryzome_hermes_plugin"
 
+[project.urls]
+Homepage = "https://github.com/0xPlaygrounds/hermes-ryzome-plugin"
+Repository = "https://github.com/0xPlaygrounds/hermes-ryzome-plugin"
+Issues = "https://github.com/0xPlaygrounds/hermes-ryzome-plugin/issues"
+
 [tool.setuptools]
 include-package-data = true
 

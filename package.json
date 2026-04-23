@@ -8,12 +8,11 @@
   "packageManager": "pnpm@10.31.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/0xPlaygrounds/ryzome-mcp-plugins.git",
-    "directory": "packages/hermes-ryzome"
+    "url": "git+https://github.com/0xPlaygrounds/hermes-ryzome-plugin.git"
   },
-  "homepage": "https://github.com/0xPlaygrounds/ryzome-mcp-plugins/tree/main/packages/hermes-ryzome",
+  "homepage": "https://github.com/0xPlaygrounds/hermes-ryzome-plugin",
   "bugs": {
-    "url": "https://github.com/0xPlaygrounds/ryzome-mcp-plugins/issues"
+    "url": "https://github.com/0xPlaygrounds/hermes-ryzome-plugin/issues"
   },
   "keywords": [
     "hermes-agent",
@@ -39,7 +38,7 @@
     "vitest": "^4.0.18"
   },
   "dependencies": {
-    "@ryzome-ai/ryzome-core": "workspace:*",
+    "@ryzome-ai/ryzome-core": "^0.2.4",
     "zod": "^4.3.6"
   }
 }
