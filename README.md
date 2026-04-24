@@ -15,7 +15,7 @@ This repository is the standalone Hermes install surface. The broader multi-surf
 Recommended Hermes install path:
 
 ```bash
-hermes plugins install mateobelanger/hermes-ryzome-plugin --enable
+hermes plugins install 0xPlaygrounds/hermes-ryzome-plugin --enable
 hermes ryzome setup --key <api-key>
 ```
 

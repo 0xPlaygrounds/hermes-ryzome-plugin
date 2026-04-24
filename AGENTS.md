@@ -4,7 +4,7 @@ This repository is the standalone Hermes install surface for the Ryzome plugin.
 
 ## What this repo is for
 
-- Standard Hermes install flow: `hermes plugins install mateobelanger/hermes-ryzome-plugin --enable`
+- Standard Hermes install flow: `hermes plugins install 0xPlaygrounds/hermes-ryzome-plugin --enable`
 - PyPI package source for `hermes-ryzome-plugin`
 - Bundled runtime asset for git installs: `ryzome_hermes_plugin/_runner.js`
 
