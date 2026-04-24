@@ -8,11 +8,11 @@
   "packageManager": "pnpm@10.31.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/0xPlaygrounds/hermes-ryzome-plugin.git"
+    "url": "git+https://github.com/mateobelanger/hermes-ryzome-plugin.git"
   },
-  "homepage": "https://github.com/0xPlaygrounds/hermes-ryzome-plugin",
+  "homepage": "https://github.com/mateobelanger/hermes-ryzome-plugin",
   "bugs": {
-    "url": "https://github.com/0xPlaygrounds/hermes-ryzome-plugin/issues"
+    "url": "https://github.com/mateobelanger/hermes-ryzome-plugin/issues"
   },
   "keywords": [
     "hermes-agent",
