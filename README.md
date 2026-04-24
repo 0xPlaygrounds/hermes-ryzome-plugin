@@ -30,13 +30,21 @@ Both the git install and the PyPI wheel ship a bundled Node runner at `ryzome_he
 
 ## Configure
 
+If your Hermes version exposes plugin CLI commands, you can use:
+
 ```bash
 hermes ryzome setup --key <api-key>      # non-interactive
 hermes ryzome setup                      # interactive prompt
 hermes ryzome status                     # verify
 ```
 
-Config is written to `~/.hermes/ryzome.json`:
+If `hermes ryzome ...` is unavailable in your Hermes build, configure the plugin with either:
+
+```bash
+export RYZOME_API_KEY=<api-key>
+```
+
+or a config file at `~/.hermes/ryzome.json`:
 
 ```json
 {
@@ -74,10 +82,14 @@ Environment variables `RYZOME_API_KEY`, `RYZOME_OPENCLAW_API_KEY`, or `PLUGIN_US
 
 ## CLI Commands
 
+The plugin registers these commands:
+
 | Command | Description |
 |---------|-------------|
 | `hermes ryzome setup` | Interactive API key configuration (or pass `--key` for non-interactive) |
 | `hermes ryzome status` | Show the current plugin configuration status |
+
+Some Hermes versions do not yet expose general plugin CLI commands in the top-level argparse tree. If `hermes ryzome` is unavailable, use `RYZOME_API_KEY` or `~/.hermes/ryzome.json` instead.
 
 ## Environment Variables
 

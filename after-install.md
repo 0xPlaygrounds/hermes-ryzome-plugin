@@ -2,10 +2,20 @@
 
 Next steps:
 
+If your Hermes version exposes plugin CLI commands:
+
 ```bash
 hermes ryzome setup --key <api-key>
 hermes ryzome status
 ```
+
+If `hermes ryzome` is unavailable, configure the plugin with either:
+
+```bash
+export RYZOME_API_KEY=<api-key>
+```
+
+or `~/.hermes/ryzome.json`.
 
 Notes:
 

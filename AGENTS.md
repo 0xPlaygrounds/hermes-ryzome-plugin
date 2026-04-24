@@ -34,3 +34,4 @@ pnpm test
 - Keep `ryzome_hermes_plugin/_runner.js` committed. The standalone repo must work via `hermes plugins install` without asking users to build anything.
 - If `src/runner.ts` changes, run `pnpm build` and commit the refreshed `ryzome_hermes_plugin/_runner.js`.
 - `@ryzome-ai/ryzome-core` resolves from npm in this standalone repo. Do not switch it back to `workspace:*` here.
+- Current Hermes builds may load the plugin and its tools correctly while still failing to expose `hermes ryzome ...` in the top-level CLI parser. Do not promise the CLI subcommand without verifying against the target Hermes version; fall back to `RYZOME_API_KEY` / `~/.hermes/ryzome.json` when needed.
